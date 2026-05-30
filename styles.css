@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Mikron';
+  src: url('fonts/mikron font.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +16,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Mikron', 'Inter', sans-serif;
   background: #f5d7a1;
   color: #572c19;
   overflow-x: hidden;
@@ -80,6 +87,7 @@ h1, h2, h3 {
   text-decoration: none;
   font-size: 0.85rem;
   font-weight: 400;
+  white-space: nowrap;
   transition: color 0.3s;
 }
 
@@ -611,6 +619,13 @@ h1, h2, h3 {
   font-size: 0.85rem;
 }
 
+.footer-copy {
+  text-align: center;
+  color: rgba(255,255,255,0.25);
+  font-size: 0.75rem;
+  margin-top: 1.5rem;
+}
+
 /* ─── Scroll Progress ─── */
 
 .progress-bar {
@@ -695,6 +710,22 @@ h1, h2, h3 {
 }
 
 @media (max-width: 600px) {
+  .nav {
+    padding: 1rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .nav-links a {
+    font-size: 0.75rem;
+  }
+
+  .nav-logo {
+    font-size: 0.9rem;
+  }
+
   .hero-title {
     font-size: clamp(2.5rem, 14vw, 4rem);
   }
